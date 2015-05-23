@@ -1,0 +1,10 @@
+/* remove padding and adjust height to accommodate image */
+.navbar-brand {
+  height: 105px;
+  padding: 0;
+}
+
+/* add a little space above and below form buttons */
+.btn {
+  margin: 5px 0;
+}

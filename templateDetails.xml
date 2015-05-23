@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE extension PUBLIC "-//Joomla!//DTD Extensions//EN" "extension.dtd">
+<extension version="3" type="template" client="site" method="upgrade">
+	<name>hsomc</name>
+	<version>0.5</version>
+	<creationDate>4/25/2015</creationDate>
+	<author>Max A. Schneider</author>
+	<authorEmail>max@imageinnova.com</authorEmail>
+	<copyright>Copyright (C) 2015 Humane Society of Midland County. All rights reserved.</copyright>
+	<description>TPL_HSOMC_XML_DESCRIPTION</description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	</files><positions>
+		<position>debug</position>
+		<position>message</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="templateColor" class="" type="color" default="#265174"
+					label="TPL_HSOMC_COLOR_LABEL"
+					description="TPL_HSOMC_COLOR_DESC" />
+
+				<field name="templateBackgroundColor" class="" type="color" default="#FFFFFF"
+					label="TPL_HSOMC_BACKGROUND_COLOR_LABEL"
+					description="TPL_HSOMC_BACKGROUND_COLOR_DESC" />
+
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_HSOMC_LOGO_LABEL"
+					description="TPL_HSOMC_LOGO_DESC" />
+					
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_HSOMC_FONT_LABEL"
+					description="TPL_HSOMC_FONT_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="TPL_HSOMC_FONT_NAME_LABEL"
+					description="TPL_HSOMC_FONT_NAME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
