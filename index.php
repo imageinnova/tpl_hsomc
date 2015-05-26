@@ -73,7 +73,20 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 JHtml::_('bootstrap.framework');
 
 // template scripting
-$doc->addScript('templates/' . $this->template . '/js/bootstrap.min.js');
+// attempting to get rid of conflict with MooTools
+$doc->addScriptDeclaration('
+   if (MooTools != undefined) {
+      var mHide = Element.prototype.hide;
+      Element.implement({
+         hide: function() {
+            if (this.hasClass("deeper")) {
+               return this;
+            }
+            mHide.apply(this, arguments);
+         }
+      });
+   }
+');
 ?>
 <!DOCTYPE html>
 <html>
