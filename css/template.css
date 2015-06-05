@@ -1,10 +1,20 @@
 /* remove padding and adjust height to accommodate image */
 .navbar-brand {
-  height: 105px;
-  padding: 0;
+	height: 105px;
+	padding: 0;
 }
 
 /* add a little space above and below form buttons */
 .btn {
-  margin: 5px 0;
+	margin: 5px 0;
+}
+
+/* a little space above and below the logo and site description */
+.brand,.site-description {
+	margin: 0.5em 0;
+}
+
+/* search page pre- and post-iframe areas */
+.pretext,.posttext {
+	margin: 0.5em 0;
 }
