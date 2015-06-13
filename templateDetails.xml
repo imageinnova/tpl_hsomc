@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE extension PUBLIC "-//Joomla!//DTD Extensions//EN" "extension.dtd">
 <extension version="3" type="template" client="site" method="upgrade">
 	<name>hsomc</name>
-	<version>0.5</version>
+	<version>1.0</version>
 	<creationDate>4/25/2015</creationDate>
 	<author>Max A. Schneider</author>
 	<authorEmail>max@imageinnova.com</authorEmail>
