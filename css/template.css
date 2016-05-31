@@ -18,3 +18,8 @@
 .pretext,.posttext {
 	margin: 0.5em 0;
 }
+
+/* fix for img-responsive */
+.img-responsive {
+	width: 100%;
+}

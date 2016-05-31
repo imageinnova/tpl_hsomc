@@ -11,7 +11,7 @@ $params = $app->getTemplate(true)->params;
 $sitename = $app->get('sitename');
 
 if ($this->params->get('logoFile')):
-	$logo = '<img src="' . JUri::root() . $this->params->get('logoFile') . '" alt="' . $sitename . '" />';
+	$logo = '<img class="img-responsive" src="' . JUri::root() . $this->params->get('logoFile') . '" alt="' . $sitename . '" />';
 elseif ($this->params->get('sitetitle')):
 	$logo = '<span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('sitetitle')) . '</span>';
 else:
