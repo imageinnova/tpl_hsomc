@@ -105,7 +105,7 @@ $doc->addScriptDeclaration('
 		
 		<style type="text/css">
 			body.site {
-				border-top: 3px solid <?php echo $params->get('templateColor'); ?>
+				border-top: 3px solid <?php echo $params->get('templateColor'); ?>;
 				background-color: <?php echo $params->get('templateBackgroundColor'); ?>;
 			}
 

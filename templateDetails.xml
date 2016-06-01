@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE extension PUBLIC "-//Joomla!//DTD Extensions//EN" "extension.dtd">
 <extension version="3" type="template" client="site" method="upgrade">
 	<name>hsomc</name>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<creationDate>4/25/2015</creationDate>
 	<author>Max A. Schneider</author>
 	<authorEmail>max@imageinnova.com</authorEmail>
@@ -37,6 +37,7 @@
 		<position>position-12</position>
 		<position>position-13</position>
 		<position>position-14</position>
+		<position>footer</position>
 	</positions>
 	<config>
 		<fields name="params">
