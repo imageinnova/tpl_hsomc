@@ -106,16 +106,20 @@ $doc->addScriptDeclaration('
 		<style type="text/css">
 			body.site {
 				border-top: 3px solid <?php echo $params->get('templateColor'); ?>
-				background-color: <?php echo $params->get('templateColor'); ?>;
+				background-color: <?php echo $params->get('templateBackgroundColor'); ?>;
+			}
+
+			h1, h2, h3, h4, h5, h6, .site-title {
+				color: <?php echo $params->get('templateHeadingColor'); ?>;
 			}
 			
 			a {
-				color: <?php echo $params->get('templateColor'); ?>;
+				color: <?php echo $params->get('templateLinkColor'); ?>;
 			}
 			
 			.navbar-inner, .nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover,
 			.btn-primary {
-				background: <?php echo $params->get('templateColor'); ?>;
+				background: <?php echo $params->get('templateMenuHighlightColor'); ?>;
 			}
 			
 			.navbar-inner {
