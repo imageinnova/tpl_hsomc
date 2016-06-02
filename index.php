@@ -148,15 +148,15 @@ $doc->addScriptDeclaration('
 									<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
 								<?php endif; ?>
 							</a>
-							<?php if ($this->countModules('position-0')): ?>
+							<?php if ($this->countModules('position-11')): ?>
 							<div class="header-search pull-right">
-								<jdoc:include type="modules" name="position-0" style="none" />
+								<jdoc:include type="modules" name="position-11" style="none" />
 							</div> <!-- header-search -->
 							<?php endif; ?>
 						</div> <!-- header-inner -->
-						<?php if ($this->countModules('position-11')) : ?>
+						<?php if ($this->countModules('position-0')) : ?>
 							<div>
-								<jdoc:include type="modules" name="position-11" />
+								<jdoc:include type="modules" name="position-0" />
 							</div>
 						<?php endif; ?>
 					</div> <!-- container-fluid -->
@@ -200,11 +200,11 @@ $doc->addScriptDeclaration('
 						<jdoc:include type="modules" name="position-8" style="well" />
 					</div> <!-- col-md-3 -->
 					<?php endif; ?>
-				</div>
+				</div> <!-- row-fluid -->
 				
 				<!-- Bottom area -->
 				<?php if($bottomLeft || $bottomMiddle || $bottomRight): ?>
-				<div class="row">
+				<div class="row-fluid">
 					<?php if ($bottomLeft) : ?>
 					<div class="<?php echo $spanBottomLeft; ?>">
 						<jdoc:include type="modules" name="position-12" />
@@ -220,7 +220,7 @@ $doc->addScriptDeclaration('
 						<jdoc:include type="modules" name="position-14" />
 					</div> <!-- bottomRight -->
 					<?php endif; ?>
-				</div> <!-- row -->
+				</div> <!-- row-fluid -->
 				<?php endif; ?>
 
 				<!-- Footer -->
@@ -239,4 +239,4 @@ $doc->addScriptDeclaration('
 			</div>
 		</div>
 	</body>
-	</html>
+</html>
