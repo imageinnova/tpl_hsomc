@@ -75,7 +75,8 @@ JHtml::_('bootstrap.framework');
 // template scripting
 // attempting to get rid of conflict with MooTools
 $doc->addScriptDeclaration('
-   if (MooTools != undefined) {
+//   if (MooTools != undefined) {
+   if (typeof MooTools !== "undefined") {
       var mHide = Element.prototype.hide;
       Element.implement({
          hide: function() {
