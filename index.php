@@ -10,10 +10,10 @@ $params = $app->getTemplate(true)->params;
 // config parameters defaults
 $sitename = $app->get('sitename');
 
-if ($this->params->get('logoFile')):
-	$logo = '<img class="img-responsive" src="' . JUri::root() . $this->params->get('logoFile') . '" alt="' . $sitename . '" />';
-elseif ($this->params->get('sitetitle')):
-	$logo = '<span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('sitetitle')) . '</span>';
+if ($params->get('logoFile')):
+	$logo = '<img class="img-responsive" src="' . JUri::root() . $params->get('logoFile') . '" alt="' . $sitename . '" />';
+elseif ($params->get('sitetitle')):
+	$logo = '<span class="site-title" title="' . $sitename . '">' . htmlspecialchars($params->get('sitetitle')) . '</span>';
 else:
 	$logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . '</span>';
 endif;
@@ -95,11 +95,11 @@ $doc->addScriptDeclaration('
 		<jdoc:include type="head" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<?php // Google font for headings and title ?>
-		<?php if ($this->params->get('googleFont')) : ?>
-		<link href='//fonts.googleapis.com/css?family=<?php echo $this->params->get('googleFontName'); ?>' rel='stylesheet' type='text/css' />
+		<?php if ($params->get('googleFont')) : ?>
+		<link href='//fonts.googleapis.com/css?family=<?php echo $params->get('googleFontName'); ?>' rel='stylesheet' type='text/css' />
 		<style type="text/css">
 			h1, h2, h3, h4, h5, h6, .site-title {
-				font-family: '<?php echo str_replace('+', ' ', $this->params->get('googleFontName')); ?>', sans-serif;
+				font-family: '<?php echo str_replace('+', ' ', $params->get('googleFontName')); ?>', sans-serif;
 			}
 		</style>
 		<?php endif; ?>
@@ -143,10 +143,10 @@ $doc->addScriptDeclaration('
 				<header class="header hidden-xs" role="banner">
 					<div class="container-fluid">
 						<div class="header-inner clearfix">
-							<a class="brand pull-left" href="<?php echo $this->baseurl; ?>/">
+							<a class="brand pull-left" href="<?php echo ($params->get('alternateHome') > "" ? JRoute::_("index.php?Itemid=" . $params->get('alternateHome')) : $this->baseurl); ?>/">
 								<?php echo $logo; ?>
-								<?php if ($this->params->get('sitedescription')) : ?>
-									<?php echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription')) . '</div>'; ?>
+								<?php if ($params->get('sitedescription')) : ?>
+									<?php echo '<div class="site-description">' . htmlspecialchars($params->get('sitedescription')) . '</div>'; ?>
 								<?php endif; ?>
 							</a>
 							<?php if ($this->countModules('position-11')): ?>
